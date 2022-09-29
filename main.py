@@ -1,4 +1,4 @@
-from film import Film
+from movie import Movie
 
 pocet = int(input("Zadaj počet filmov: "))
 pole_objektov = [pocet]
@@ -9,4 +9,4 @@ for i in range(pocet):
     rok_vyroby = ""
     zaner = ""
 
-    pole_objektov[i] = Film(nazov, rok_vyroby, zaner)
+    pole_objektov[i] = Movie(nazov, rok_vyroby, zaner)
