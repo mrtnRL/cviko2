@@ -1,4 +1,4 @@
-from models.movieModel import MovieModel
+from models.MovieModel import MovieModel
 
 
 class MovieLibraryService:
@@ -27,3 +27,4 @@ class MovieLibraryService:
             print("")
 
         print("")
+
