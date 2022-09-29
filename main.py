@@ -1,12 +1,15 @@
-from movieModel import MovieModel
+from models.movieModel import MovieModel
+from services.MovieLibraryService import MovieLibraryService
 
-pocet = int(input("Zadaj počet filmov: "))
-pole_objektov = [pocet]
+she_hulk = MovieModel("She-Hulk", "Jennifer Walters navigates the complicated life of a single, "
+                      "30-something attorney who also happens to be a green 6-foot-7-inch"
+                      "superpowered Hulk.", 2022, "action", 5/10)
 
-poradie = 0
-for i in range(pocet):
-    nazov = ""
-    rok_vyroby = ""
-    zaner = ""
+print(she_hulk.to_string())
 
-    pole_objektov[i] = MovieModel(nazov, rok_vyroby, zaner)
+movie_library = MovieLibraryService()
+movie_library.add_movie(she_hulk)
+movie_library.add_movie()
+movie_library.to_string()
+movie_library.remove_movie()
+movie_library.to_string()
